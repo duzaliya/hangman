@@ -50,9 +50,7 @@ class ConsoleInterface
   end
 
   def get_input
-    # print - чтобы пользователь вводил букву в этой  же строке, а не на следующей
     print "Введите следующую букву: "
-    # [0] - чтобы взть только первую букву из тех, что введет пользователь
     letter = gets[0].upcase
     letter
   end
