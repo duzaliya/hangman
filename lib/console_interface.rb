@@ -14,9 +14,9 @@ class ConsoleInterface
 
   def print_out
     puts <<~END
-    Слово: #{word_to_show}
-    #{figure}
-    Ошибки (#{@game.errors_made}): #{errors_to_show}
+    Слово: #{word_to_show.colorize(:light_blue)}
+    #{figure.colorize(:yellow)}
+    Ошибки (#{@game.errors_made}): #{errors_to_show.colorize(:red)}
     У вас осталось ошибок: #{@game.errors_allowed}
 
     END

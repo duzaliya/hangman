@@ -18,7 +18,8 @@
 #### Запустить игру:
 
 ```
-ruby main.rb
+bundle
+bundle exec ruby main.rb
 ```
 
 #### Добавить новое слово:
