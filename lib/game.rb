@@ -36,19 +36,6 @@ class Game
     errors_allowed == 0
   end
 
-  def normalize_letter(letter)
-    # заменяет переданную букву ё-е, й-и
-    case letter
-    when "Ё" then "Е"
-    when "Й" then "И"
-    else letter
-    end
-  end
-
-  def normalized_letters
-    @letters.map { |letter| normalize_letter(letter)}
-  end
-
   def over?
     won? || lost?
   end
@@ -66,5 +53,20 @@ class Game
 
   def word
     @letters.join
+  end
+
+  private
+
+  def normalize_letter(letter)
+    # заменяет переданную букву ё-е, й-и
+    case letter
+    when "Ё" then "Е"
+    when "Й" then "И"
+    else letter
+    end
+  end
+
+  def normalized_letters
+    @letters.map { |letter| normalize_letter(letter)}
   end
 end
