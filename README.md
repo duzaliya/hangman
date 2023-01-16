@@ -17,8 +17,14 @@
 
 #### Запустить игру:
 
+##### Склонируйте репозиторий
+
 ```
-bundle
+git clone https://github.com/duzaliya/hangman.git
+```
+
+```
+bundle install
 bundle exec ruby main.rb
 ```
 
